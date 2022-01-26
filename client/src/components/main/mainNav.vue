@@ -1,7 +1,7 @@
 <template>
   <div class="mainNav-wrapper">
     <div class="mainNav-logo">
-      <img src="../../assets/logo_s.png" alt="" @click="clickLogo">
+      <img src="https://ufilecdn.shadowfish0.top/shadowimagehost/2021/05/07/c5b76c97329a6.png" alt="" @click="clickLogo">
       <div class="line"></div>
     </div>
 
