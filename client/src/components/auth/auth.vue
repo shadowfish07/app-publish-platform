@@ -2,26 +2,7 @@
   <div class="user">
     <div class="user-left">
 
-      <div class="user-logo"></div>
-      <div class="user-divier"></div>
-      <div class="user-name">爱发布</div>
-
-      <div class="user-item" style="margin-top: 24.87vh" @click="clickSubItem('api')">
-        <span class="icon-ic_api_s"></span>
-        <p>API文档</p>
-      </div>
-      <div class="user-item" @click="clickSubItem('help')">
-        <span class="icon-ic_help_s"></span>
-        <p>Help</p>
-      </div>
-      <div class="user-item" @click="clickSubItem('github')">
-        <span class="icon-ic_github_s"></span>
-        <p>Github</p>
-      </div>
-      <div class="user-item" @click="clickSubItem('about')">
-        <span class="icon-ic_about_s"></span>
-        <p>About</p>
-      </div>
+      <div class="user-name">亦习校园统一应用发布平台</div>
     </div>
     <div class="user-right">
       <div class="user-login-panel">
@@ -30,9 +11,6 @@
         </div>
         <div class="user-login-title" v-if="showType==='register'">
           <p> 注&nbsp;&nbsp;&nbsp;&nbsp;册 <span>/Register</span></p>
-        </div>
-        <div class="user-login-title" v-if="showType==='forget'">
-          <p> 找回密码 <span>/Request Password</span></p>
         </div>
 
         <div v-bind:class="[showType==='login' ? 'user-login-form' : 'user-register-form']">
@@ -68,14 +46,11 @@
           >{{ showType==='login' ? '立即登录' : '立即注册'}}
           </el-button>
 
-          <div class="user-login-form-label" v-if="showType==='login'">
-            <p>没有账号？<span @click="onRegister">立即注册</span></p>
-          </div>
+<!--          <div class="user-login-form-label" v-if="showType==='login'">-->
+<!--            <p>没有账号？<span @click="onRegister">立即注册</span></p>-->
+<!--          </div>-->
           <div class="user-login-form-label" v-if="showType==='register'">
             <p>已有账号？<span @click="onRegister">现在登录</span></p>
-          </div>
-          <div class="user-login-form-label user-login-form-bottom">
-            <p @click="onForget">忘记密码</p>
           </div>
         </div>
       </div>
@@ -314,7 +289,7 @@
   .user-name {
     font-size: 1.5em;
     color: white;
-    margin-top: 24px;
+    margin-top: 170px;
     font-family: STYuanti-SC;
   }
 
