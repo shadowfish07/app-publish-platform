@@ -17,7 +17,7 @@ services:
       dockerfile: docker/Dockerfile
     environment:
       FABU_DB_HOST: mongo
-      FABU_BASE_URL: http://app.yixicampus.top 正式环境部署请打开注释，并修改为域名为自己的域名
+      FABU_BASE_URL: https://app.yixicampus.top
       FABU_UPLOAD_DIR: /fabu/upload
       FABU_ALLOW_REGISTER: "false"
     ports: 
