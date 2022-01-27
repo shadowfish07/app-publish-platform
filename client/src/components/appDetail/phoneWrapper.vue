@@ -3,7 +3,7 @@
       <img class="appicon" :src="getIconUrl()" alt="">
       <p class="title">{{this.appBaseData.appName}}</p>
       <div class="info">
-        <p class="desc">版本：{{this.appVersionInfo.versionStr}}</p><span>大小：{{(this.appVersionInfo.size/1024/1024).toFixed(1)}}M</span>
+        <p class="desc">版本：{{this.appVersionInfo.versionStr}}</p>
       </div>
       <div v-if="!showDownLoadBtn">
         <div>
